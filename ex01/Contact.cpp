@@ -50,7 +50,7 @@ void Contact::get_phone_number(std::string phone_number)
     return;
 }
 
-void Contact::print_contact(int index)
+void Contact::print_contact_tab(int index)
 {
     std::cout << "|";
     std::cout << std::right << std::setw(10) << std::setfill(' ') << index;
@@ -66,4 +66,12 @@ void Contact::print_contact(int index)
     std::cout << std::setw(56) << std::setfill('-');
     std::cout << "" << std::endl;
     return;
+}
+
+void Contact::print_contact(void)
+{
+    std::cout << "First name: " << this->_firstname << std::endl;
+    std::cout << "Last name: " << this->_lastname << std::endl;
+    std::cout << "Nickname: " << this->_nickname << std::endl;
+    std::cout << "Darkest secret: " << this->_darkest_secret << std::endl;
 }

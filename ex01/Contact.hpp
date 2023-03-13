@@ -14,7 +14,8 @@ public:
     void get_nickname(std::string nickname);
     void get_darkest_secret(std::string darkest_secret);
     void get_phone_number(std::string phone_number);
-    void print_contact(int index);
+    void print_contact_tab(int index);
+    void print_contact(void);
 
 private:
     std::string _firstname;

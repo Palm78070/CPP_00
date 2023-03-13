@@ -133,7 +133,7 @@ void PhoneBook::_search_index(void)
         this->_search_index();
     }
     else
-        std::cout << "index is " << index << std::endl;
+        this->_contact[index].print_contact();
     return;
 }
 
@@ -150,7 +150,7 @@ void PhoneBook::search_contact(void)
     {
         this->_print_head();
         while (++index <= count)
-            this->_contact[index].print_contact(index);
+            this->_contact[index].print_contact_tab(index);
         this->_search_index();
     }
     return;
