@@ -7,7 +7,7 @@ CFLAGS := -Wall -Werror -Wextra -std=c++98 -g
 INCS := -iquote ./
 
 SRCS := tests.cpp \
-		Account.cpp \
+	Account.cpp \
 
 OBJS := $(SRCS:.cpp=.o)
 
