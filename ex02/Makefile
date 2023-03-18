@@ -14,10 +14,10 @@ OBJS := $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC)  -o $(NAME) $^
+	$(CC)  -o $@ $^
 
-%.o: %.c
-	$(CC) $(CFLAGS) $(INCS) -c $(SRCS) -o $@
+%.o: %.cpp
+	$(CC) $(CFLAGS) $(INCS) -c $^ -o $@
 
 clean:
 	rm -rf $(NAME) *.dSYM ${OBJS}
